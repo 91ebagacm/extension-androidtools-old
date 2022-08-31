@@ -7,7 +7,7 @@ package android;
 import lime.system.JNI;
 
 /**
- * @author Saw (M.A. Jigsaw)
+ * @author Mihai Alexandru (M.A. Jigsaw)
  */
 #if !debug
 @:fileXml('tags="haxe,release"')
@@ -43,7 +43,7 @@ class Permissions
 /**
  * Almost all Android Permissions.
  */
-abstract PermissionsList(String) to String from String
+enum abstract PermissionsList(String) to String from String
 {
 	public static final ACCEPT_HANDOVER = 'android.permission.ACCEPT_HANDOVER';
 	public static final ACCESS_BACKGROUND_LOCATION = 'android.permission.ACCESS_BACKGROUND_LOCATION';

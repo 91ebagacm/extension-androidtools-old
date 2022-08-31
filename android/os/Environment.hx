@@ -9,7 +9,7 @@ import lime.system.JNI;
 /**
  * @see https://developer.android.com/reference/android/os/Environment
  * 
- * @author Saw (M.A. Jigsaw)
+ * @author Mihai Alexandru (M.A. Jigsaw)
  */
 #if !debug
 @:fileXml('tags="haxe,release"')
@@ -87,7 +87,7 @@ class Environment
 	}
 }
 
-abstract MediaType(String) to String from String
+enum abstract MediaType(String) to String from String
 {
 	public static final BAD_REMOVAL = 'bad_removal';
 	public static final CHECKING = 'checking';

@@ -7,7 +7,7 @@ package android;
 import lime.system.JNI;
 
 /**
- * @author Mihai Alexandru (M.A. Jigsaw)
+ * @author Saw (M.A. Jigsaw)
  */
 #if !debug
 @:fileXml('tags="haxe,release"')
@@ -103,7 +103,7 @@ class Hardware
 	}
 }
 
-enum abstract IntentTextType(String) to String from String
+abstract IntentTextType(String) to String from String
 {
 	public static final PLAIN = 'text/plain';
 	public static final RTF = 'text/rtf';
@@ -112,13 +112,13 @@ enum abstract IntentTextType(String) to String from String
 	public static final ANY = "text/*";
 }
 
-enum abstract ToastType(Int) to Int from Int
+abstract ToastType(Int) to Int from Int
 {
 	public static final LENGTH_SHORT = 0;
 	public static final LENGTH_LONG = 1;
 }
 
-enum abstract OrientationType(Int) to Int from Int
+abstract OrientationType(Int) to Int from Int
 {
 	public static final PORTRAIT = 0;
 	public static final LANDSCAPE = 1;

@@ -9,7 +9,7 @@ import lime.system.JNI;
 /**
  * @see https://developer.android.com/reference/android/os/Build
  * 
- * @author Mihai Alexandru (M.A. Jigsaw)
+ * @author Saw (M.A. Jigsaw)
  */
 #if !debug
 @:fileXml('tags="haxe,release"')
@@ -93,7 +93,7 @@ class VERSION
 	public static final SDK_INT:Int = JNI.createStaticField("android/os/Build$VERSION", 'SDK_INT', 'I').get();
 }
 
-enum abstract VERSION_CODES(Int) to Int from Int
+abstract VERSION_CODES(Int) to Int from Int
 {
 	public static final BASE = 1;
 	public static final BASE_1_1 = 2;

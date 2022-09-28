@@ -53,7 +53,12 @@ public class Hardware extends Extension {
         Extension.mainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(Extension.mainContext, message, duration).show();
+                switch (duration) {
+                    case 0:
+                        Toast.makeText(Extension.mainContext, message, Toast.LENGTH_SHORT).show();
+                    default:
+                        Toast.makeText(Extension.mainContext, message, Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
